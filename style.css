@@ -1,8 +1,95 @@
-.attribution {
-    font-size: 11px;
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200;300;400;500;600;700&family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;500;600;700&family=Lexend+Deca:wght@100;200;300;400&family=Outfit:wght@100;300;400;600&family=Red+Hat+Display:wght@300;400;500;700;900&family=Rubik:wght@300;400;500;600;700&display=swap');
+body{
+    position: relative;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(270, 20%, 96%);
+    font-family: "Rubik",sans-serif;
+    font-size: 9px;
+}
+.background{
+    position: absolute;
+    top: -480px;
+    left: -340px;
+    width: 520px;
+    height: 1000px;
+    background-image: linear-gradient(to top ,hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    background-repeat: no-repeat;
+    border-radius: 0px 0px 340px 400px;
+    z-index: -1;
+}
+.white-bar{
+    position: relative;
+    top: 30px;
+    background-color: white;
+    width: 140px;
+    height: 30px;
+    border-radius:10px 10px 15px 15px;
 }
 
-.attribution a {
-    color: hsl(228, 45%, 44%);
+section{
+    width: 260px;
+    height: 500px;
+    background-color: hsl(270, 20%, 96%);
+    border: solid white 10px;
+    border-radius: 30px;
+    box-shadow:10px 20px 30px 0px rgb(209, 208, 208);
 }
+.profil{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-image: linear-gradient(to right ,hsl(264, 100%, 61%), hsl(293, 88%, 52%));
+    border-radius: 20px 20px 7px 7px;
+    padding-top: 2rem;
+    padding-bottom: 0.8rem;
+    padding-left: 15px;
+    /* box-shadow:0px 10px 20px 0px rgb(209, 208, 208); */
+}
+.crochet{
+    color: hsl(275, 100%, 96%);
+    font-size: 12px;
+    font-weight:700;
+    padding-right: 8px;
+}
+.profil>img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: solid hsl(276, 100%, 81%) 2px;
+}
+.name{
+    color: hsl(286, 90%, 81%);
+    padding-left: 0.6rem;
+    line-height: 13px;
+}
+span{
+    color: hsl(276, 100%, 92%);
+    font-weight: 500;
+    font-size: 13px;
+}
+.dots{
+    color: hsl(273, 73%, 90%);
+    font-size: 13px;
+    line-height: 4px;
+    padding-left: 5rem;
+    padding-bottom: 10px;
+}
+
+.message{
+    color: hsl(288, 67%, 57%);
+    font-weight: 500;
+    background-color: hsl(275, 46%, 93%);
+    width: 140px;
+    border-radius: 7px 7px 7px 4px;
+    margin-left: 8px;
+    margin-top: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    line-height: 12px;
+}
+
