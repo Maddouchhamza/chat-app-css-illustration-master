@@ -47,7 +47,7 @@ section{
     padding-top: 2rem;
     padding-bottom: 0.8rem;
     padding-left: 15px;
-    /* box-shadow:0px 10px 20px 0px rgb(209, 208, 208); */
+    box-shadow: 0px 8px 5px 0px rgb(236, 236, 236);
 }
 .crochet{
     color: hsl(275, 100%, 96%);
@@ -84,12 +84,42 @@ span{
     font-weight: 500;
     background-color: hsl(275, 46%, 93%);
     width: 140px;
-    border-radius: 7px 7px 7px 4px;
+    border-radius: 12px 12px 12px 3px;
     margin-left: 8px;
-    margin-top: 8px;
+    margin-top: 9px;
     padding-top: 8px;
     padding-bottom: 8px;
     padding-left: 8px;
     line-height: 12px;
 }
-
+.my-message{
+    color: hsl(271, 15%, 43%);
+    font-weight: 500;
+    background-color: white;
+    width: 140px;
+    border-radius: 12px 12px 3px 12px;
+    margin-left: 102px;
+    margin-top: 9px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    line-height: 12px;
+    box-shadow: 1px 8px 5px 0px rgb(236, 236, 236);
+}
+.dogs{
+    margin-top: 18px;
+    margin-left: 98px;
+}
+.dogs img{
+    width: 45px;
+    border-radius: 10px;
+    margin-right: 6px;
+}
+#fourth{
+    width: fit-content;
+    padding-right: 10px;
+    margin-left: 159px;
+}
+#fifth{
+    margin-top: 18px;
+}
