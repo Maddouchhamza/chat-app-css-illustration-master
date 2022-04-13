@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200;300;400;500;600;700&family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;500;600;700&family=Lexend+Deca:wght@100;200;300;400&family=Outfit:wght@100;300;400;600&family=Red+Hat+Display:wght@300;400;500;700;900&family=Rubik:wght@300;400;500;600;700&display=swap');
 body{
     position: relative;
-    height: 110vh;
+    height: 150vh;
+    width: 375px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,9 +11,10 @@ body{
     font-family: "Rubik",sans-serif;
     font-size: 9px;
 }
-.background{
+
+.background-top{
     position: absolute;
-    top: -480px;
+    top: -440px;
     left: -340px;
     width: 520px;
     height: 1000px;
@@ -29,10 +31,21 @@ body{
     height: 30px;
     border-radius:10px 10px 15px 15px;
 }
+.background-bottom{
+    position: absolute;
+    top: 530px;
+    left: 190px;
+    width: 180px;
+    height: 500px;
+    background-color: hsl(279, 41%, 93%);
+    border-radius: 400px 0px 0px 0px;
+    z-index: -1;
+}
+
 
 section{
-    width: 260px;
-    height: 500px;
+    width: 250px;
+    height: 538px;
     background-color: hsl(270, 20%, 96%);
     border: solid white 10px;
     border-radius: 30px;
@@ -98,7 +111,7 @@ span{
     background-color: white;
     width: 140px;
     border-radius: 12px 12px 3px 12px;
-    margin-left: 102px;
+    margin-left: 93px;
     margin-top: 9px;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -108,7 +121,7 @@ span{
 }
 .dogs{
     margin-top: 18px;
-    margin-left: 98px;
+    margin-left: 90px;
 }
 .dogs img{
     width: 45px;
@@ -118,8 +131,91 @@ span{
 #fourth{
     width: fit-content;
     padding-right: 10px;
-    margin-left: 159px;
+    margin-left: 150px;
 }
 #fifth{
     margin-top: 18px;
+}
+
+.card{
+    color: white;
+    background-image: linear-gradient(to left ,hsl(264, 100%, 61%), hsl(293, 88%, 52%));
+    width: 170px;
+    border-radius: 12px 12px 12px 3px;
+    margin-left: 8px;
+    margin-top: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 8px;
+    display: flex;
+    align-items: center;
+}
+.cercle{
+    width: 10px;
+    height: 10px;
+    border: solid  hsl(286, 90%, 81%) 1px;
+    border-radius: 50%;
+    margin-right: 9px;
+}
+.text{
+    color: hsl(286, 90%, 81%);
+    width: 95px;
+    font-size: 9px;
+    font-weight: 400;
+    margin-right: 10px;
+}
+.price{
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.type-bar{
+    color: hsl(206, 6%, 79%);
+    background-color: white;
+    border-radius: 20px;
+    padding-left: 18px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+.type{
+    height: fit-content;
+}
+.submit{
+    color: white;
+    background-color: hsl(271, 36%, 24%);
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    margin-left: 112px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+.title{
+    color: hsl(271, 36%, 24%);
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+.resume{
+    color: hsl(270, 7%, 64%);
+    font-size: 16px;
+    text-align: center;
+    line-height: 30px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
