@@ -2,11 +2,6 @@
 body{
     position: relative;
     height: 150vh;
-    width: 375px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     background-color: hsl(270, 20%, 96%);
     font-family: "Rubik",sans-serif;
     font-size: 9px;
@@ -25,11 +20,13 @@ body{
 }
 .white-bar{
     position: relative;
-    top: 30px;
+    top: 81px;
+    left: 110px;
     background-color: white;
     width: 140px;
     height: 30px;
     border-radius:10px 10px 15px 15px;
+    z-index: 10 ;
 }
 .background-bottom{
     position: absolute;
@@ -37,11 +34,20 @@ body{
     left: 190px;
     width: 180px;
     height: 500px;
-    background-color: hsl(279, 41%, 93%);
+    background-color: hsl(0, 5%, 92%);
     border-radius: 400px 0px 0px 0px;
     z-index: -1;
 }
-
+.attribution{
+    position: absolute;
+    top: 1000px;
+    right: 40px;
+    font-size: 10px;
+    color: hsl(270, 3%, 54%);
+}
+.attribution a{
+    color: hsl(0, 0%, 28%);
+}
 
 section{
     width: 250px;
@@ -49,7 +55,10 @@ section{
     background-color: hsl(270, 20%, 96%);
     border: solid white 10px;
     border-radius: 30px;
-    box-shadow:10px 20px 30px 0px rgb(209, 208, 208);
+    box-shadow:10px 20px 30px 0px rgb(214, 214, 214);
+    position: absolute;
+    left: 45px;
+    top: 80px;
 }
 .profil{
     display: flex;
@@ -204,6 +213,10 @@ span{
     flex-direction: column;
     align-items: center;
     margin-top: 4rem;
+    width: 360px;
+    position:absolute;
+    top: 650px;
+
 }
 .title{
     color: hsl(271, 36%, 24%);
@@ -218,4 +231,55 @@ span{
     line-height: 30px;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+}
+
+@media screen and (min-width:1024px){
+    body{
+        height: 100vh;
+    }
+    
+    .background-top{
+        top: -340px;
+        left: -140px;
+        width: 520px;
+        height: 1000px;
+        border-radius: 0px 0px 400px 500px;
+    }
+    .white-bar{
+        top: 80px;
+        left: 381px;
+    }    
+    .background-bottom{
+        top: 110px;
+        left: 1090px;
+        width: 480px;
+        height: 710px;
+        border-radius: 400px 400px 0px 0px;
+    }
+    .attribution{
+        top: 0px;
+        right: 10px;
+        font-size: 13px;
+    }
+
+    section{
+        position: absolute;
+        left: 315px;
+        top: 80px;
+    }
+    
+    .description{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 460px;
+        position:absolute;
+        top: 200px;
+        left: 710px;
+    }
+    .resume{
+        text-align: start;
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
 }
